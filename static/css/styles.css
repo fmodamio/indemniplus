@@ -1,0 +1,333 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    margin-bottom: 0;
+}
+
+.semaforo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 150px;
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 20px;
+            background: linear-gradient(to bottom, #333 0%, #555 100%);
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+        }
+        .semaforo button {
+            width: 106px;
+            height: 106px;
+            margin: 15px 0;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7em;
+            color: #a9a9a9; /*color letras semaforo*/
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.1s, opacity 0.5s, box-shadow 0.5s;
+        }
+        .semaforo button:active {
+            transform: scale(0.95);
+        }
+        .rojo {
+            background-color: #ff0000;
+        }
+        .amarillo {
+            background-color: #ffff00;
+            color: black;
+        }
+        .verde {
+            background-color: #00ff00;
+        }
+         .rojo.encendido {
+            box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.6);
+        }
+        .amarillo.encendido {
+            box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.6);
+        }
+        .verde.encendido {
+            box-shadow: 0 0 20px 10px rgba(0, 255, 0, 0.6);
+        }
+
+/* Introduction Section */
+
+textarea[name=mensaje] {
+  resize: none;
+}
+
+#introduccion {
+    position: relative;
+    background: url("../images/uno.jpg") no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 50px 0;
+}
+
+#introduccion p{
+    margin-bottom: 50px;
+}
+
+#introduccion .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
+    z-index: 1;
+}
+
+#introduccion .container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#introduccion .container > div {
+    flex: 1;
+    margin: 10px;
+}
+
+#introduccion a {
+    display: block;
+    padding: 40px;
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    margin: 30px;
+}
+
+#introduccion .bg-legal {
+    background-color: rgba(102, 227, 152, 0.9) !important;
+}
+
+#introduccion .bg-medico {
+    background-color: rgba(22, 114, 245, 0.9) !important;
+}
+
+#introduccion .bg-redes {
+    background-color: rgba(139, 98, 32, 0.9) !important;
+}
+
+
+#contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9); /* White background with some opacity */
+    padding: 20px;
+    border-radius: 10px;
+    color: black; /* Ensure text color is black for better visibility */
+    text-align: left;
+}
+
+#contact-form label {
+    color: black;
+}
+
+#contact-form input,
+#contact-form textarea {
+    color: black;
+}
+
+/* Testimonials Section */
+.carousel-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+#contacto {
+    background: white;
+    padding: 40px 0;
+}
+
+/* Sección de Zona Legal */
+#zona-legal {
+    padding: 50px 0;
+    background-color: #f4f0ec;
+}
+
+#zona-legal h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #395C6B;
+}
+
+#zona-legal .card .card-title {
+    font-size: 1.25em;
+    margin-bottom: 15px;
+    color: #395C6B;
+}
+
+
+/* Sección de Zona Médica */
+#zona-medica {
+    padding: 50px 0;
+    background-color: #f4f0ec;
+}
+
+#zona-medica h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #395C6B;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-body {
+    padding: 20px;
+}
+
+#zona-medica .card .card-title {
+    font-size: 1.25em;
+    margin-bottom: 15px;
+    color: #395C6B;
+}
+
+.card .card-text {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.card .fa-3x {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.card.p-4 {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Columnas de viñetas */
+.row {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente las columnas */
+}
+
+.col-md-6 {
+    padding: 0 15px; /* Espaciado lateral en las columnas */
+}
+
+.arrow-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.arrow-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.arrow-list li::before {
+    content: '➤'; /* Caracter Unicode de flecha */
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2A2D34;
+}
+
+/* Footer Styles */
+footer {
+    background: #f8f9fa;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 0.8em;
+}
+
+/* Media Queries para Dispositivos Móviles */
+@media (max-width: 767px) {
+    #introduccion {
+        padding: 50px 0;
+    }
+
+    #introduccion h1 {
+        font-size: 2em;
+    }
+
+    #introduccion p {
+        font-size: 1em;
+    }
+
+    #introduccion a {
+        padding: 40px;
+        font-size: 0.9em;
+    }
+
+    #servicios .row, #beneficios .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #servicios .service-box, #beneficios .benefit-box {
+        width: 90%;
+    }
+
+    #proceso {
+        padding: 50px 0;
+    }
+
+    #proceso .col-md-3 {
+        width: 90%;
+    }
+
+    .legal-box {
+        margin-bottom: 20px;
+    }
+
+    @media (min-width: 576px) {
+    .arrow-list li {
+        font-size: 1.2em; /* Tamaño de fuente mayor en pantallas más grandes */
+    }
+}
+
+@media (max-width: 576px) {
+    .arrow-list li {
+        font-size: 1em; /* Tamaño de fuente menor en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 767.98px) { /* Aplicar en pantallas pequeñas */
+    .semaforo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px; /* Margen para separar el semáforo del formulario */
+    }
+}
