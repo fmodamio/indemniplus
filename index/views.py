@@ -24,7 +24,7 @@ def enviar_formulario(request):
                 mensaje=form.cleaned_data['mensaje'],
                 ip_address=ip_address
             )
-            return redirect('index_gracias')  # Redirige a una página de agradecimiento
+            return redirect('index_gracias')
     else:
         form = DatosFormularioForm()
     
@@ -38,3 +38,6 @@ def legal(request):
     
 def medica(request):
     return render(request, 'index/medica.html')
+
+def politica_privacidad(request):
+    return render(request, 'index/politica_privacidad.html')

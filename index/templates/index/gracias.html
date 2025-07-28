@@ -6,10 +6,48 @@
     <title>Indemniplus - Mensaje enviado</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         {% load static %}
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}"/>
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+
+     // Define el consentimiento predeterminado de regiones concretas según tus requisitos
+     gtag('consent', 'default', {
+       'ad_storage': 'denied',
+       'ad_user_data': 'denied',
+       'ad_personalization': 'denied',
+       'analytics_storage': 'denied',
+       'functionality_storage': 'denied',
+       'personalization_storage': 'denied',
+       'security_storage': 'denied',
+       'regions':['US'],
+     });
+
+     // Set default consent for all other regions according to your requirements
+     gtag('consent', 'default', {
+       'ad_storage': 'denied',
+       'ad_user_data': 'denied',
+       'ad_personalization': 'denied',
+       'analytics_storage': 'denied',
+       'functionality_storage': 'denied',
+       'personalization_storage': 'denied',
+       'security_storage': 'denied',
+     });
+    </script>
+    <script src="https://cmp.osano.com/16BlMkUNJMqvt2Djk/f117ba04-604c-4398-8f0b-476a25495285/osano.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C752G8MKP6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-C752G8MKP6');
+    </script>
 </head>
 <body>
-    <h1>¡Gracias por enviar el formulario!</h1>
+    <h1 class="display-5">¡Gracias por enviar tu caso!</h1>
+    <p class="lead">Contactaremos contigo en las próximas 48 horas.</p>
     <a href="{% url 'index' %}">Volver al inicio</a>
 </body>
 </html>

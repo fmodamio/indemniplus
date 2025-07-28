@@ -28,15 +28,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
 
-CSRF_COOKIE_SECURE = False
+CSRF_COOKIE_SECURE = True
 
-CSRF_TRUSTED_ORIGINS = [
-    env("CSRF_TRUSTED_ORIGINS"),
-]
+#CSRF_TRUSTED_ORIGINS = [env("CSRF_TRUSTED_ORIGINS"),]
+
+CSRF_TRUSTED_ORIGINS =  env.list("CSRF_TRUSTED_ORIGINS")
 
 # Application definition
 

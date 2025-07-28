@@ -6,7 +6,45 @@
     <title>Indemniplus - Área Legal</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         {% load static %}
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}"/>
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+
+     // Define el consentimiento predeterminado de regiones concretas según tus requisitos
+     gtag('consent', 'default', {
+       'ad_storage': 'denied',
+       'ad_user_data': 'denied',
+       'ad_personalization': 'denied',
+       'analytics_storage': 'denied',
+       'functionality_storage': 'denied',
+       'personalization_storage': 'denied',
+       'security_storage': 'denied',
+       'regions':['US'],
+     });
+
+     // Set default consent for all other regions according to your requirements
+     gtag('consent', 'default', {
+       'ad_storage': 'denied',
+       'ad_user_data': 'denied',
+       'ad_personalization': 'denied',
+       'analytics_storage': 'denied',
+       'functionality_storage': 'denied',
+       'personalization_storage': 'denied',
+       'security_storage': 'denied',
+     });
+    </script>
+    <script src="https://cmp.osano.com/16BlMkUNJMqvt2Djk/f117ba04-604c-4398-8f0b-476a25495285/osano.js"></script> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C752G8MKP6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-C752G8MKP6');
+    </script>
 </head>
 <body>
 
@@ -27,7 +65,7 @@
         </div>
     </nav>
 
-<section id="zona-legal" class="py-5">
+    <section id="zona-legal" class="py-5">
         <div class="container">
             <div class="text-center mb-5">
                 <h2>¿Cómo te ayudamos?</h2>
@@ -108,6 +146,7 @@
     <!-- Footer -->
     <footer class="text-center py-4">
         <p>&copy; 2024 Indemniplus. Todos los derechos reservados.</p>
+        <p><a class="nav-link" href="/politica-privacidad">Politica de privacidad</a></p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

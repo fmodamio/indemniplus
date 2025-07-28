@@ -6,8 +6,45 @@
     <title>Indemniplus - Reclamación de Accidentes de Tráfico</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     {% load static %}
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}"/>
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
-    
+
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+
+     // Define el consentimiento predeterminado de regiones concretas según tus requisitos
+     gtag('consent', 'default', {
+       'ad_storage': 'denied',
+       'ad_user_data': 'denied',
+       'ad_personalization': 'denied',
+       'analytics_storage': 'denied',
+       'functionality_storage': 'denied',
+       'personalization_storage': 'denied',
+       'security_storage': 'denied',
+       'regions':['US'],
+     });
+
+     // Set default consent for all other regions according to your requirements
+     gtag('consent', 'default', {
+       'ad_storage': 'denied',
+       'ad_user_data': 'denied',
+       'ad_personalization': 'denied',
+       'analytics_storage': 'denied',
+       'functionality_storage': 'denied',
+       'personalization_storage': 'denied',
+       'security_storage': 'denied',
+     });
+    </script>
+    <script src="https://cmp.osano.com/16BlMkUNJMqvt2Djk/f117ba04-604c-4398-8f0b-476a25495285/osano.js"></script>    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C752G8MKP6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-C752G8MKP6');
+    </script>        
 </head>
 <body>
 
@@ -56,38 +93,44 @@
                         {% endif %}
                     </div>
                     <div class="form-group">
-<label for="id_telefono" class="form-label">Telefono</label>
-                <input type="phone" class="form-control" id="id_telefono" name="telefono" value="{{ form.telefono.value|default_if_none:''}}" required>
-                {% if form.telefono.errors %}
-                    <div class="text-danger">
-                        {{ form.telefono.errors }}
-                    </div>
-                {% endif %}
+                        <label for="id_telefono" class="form-label">Telefono</label>
+                        <input type="phone" class="form-control" id="id_telefono" name="telefono" value="{{ form.telefono.value|default_if_none:''}}" required>
+                        {% if form.telefono.errors %}
+                        <div class="text-danger">
+                            {{ form.telefono.errors }}
+                        </div>
+                        {% endif %}
                     </div>
                     <div class="form-group">
                         <label for="id_email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="id_email" name="email" value="{{ form.email.value|default_if_none:'' }}" required>
-                {% if form.email.errors %}
-                    <div class="text-danger">
-                        {{ form.email.errors }}
-                    </div>
-                {% endif %}
+                        <input type="email" class="form-control" id="id_email" name="email" value="{{ form.email.value|default_if_none:'' }}" required>
+                        {% if form.email.errors %}
+                            <div class="text-danger">
+                                {{ form.email.errors }}
+                            </div>
+                        {% endif %}
                     </div>
                     <div class="form-group">
                         <label for="id_mensaje" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="id_mensaje" name="mensaje" rows="3" required>{{ form.mensaje.value|default_if_none:'' }}</textarea>
-                {% if form.mensaje.errors %}
-                    <div class="text-danger">
-                        {{ form.mensaje.errors }}
+                        <textarea class="form-control" id="id_mensaje" name="mensaje" rows="3" required>{{ form.mensaje.value|default_if_none:'' }}</textarea>
+                        {% if form.mensaje.errors %}
+                        <div class="text-danger">
+                            {{ form.mensaje.errors }}
+                        </div>
+                        {% endif %}
                     </div>
-                {% endif %}
+                    <div>
+                        <label for="id_aceptar_terminos">
+                            <input type="checkbox" name="aceptar_terminos" id="id_aceptar_terminos" required>
+                            Estoy de acuerdo con el tratamiento de mis datos personales
+                        </label>
                     </div>
                     <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
+                </form>
             </div>
         </div>
     </div>
-</section>
+    </section>
 
     <!-- Testimonios -->
     <section id="testimonios" class="py-5">
@@ -125,7 +168,7 @@
         <div class="container">
             <h2 class="text-center mb-5">Para más información, no dudes en contactarnos.</h2>
             <ul class="list-unstyled text-center">
-                <li><a href="mailto:cfsicam@gmail.com">Email</a></li>
+                <li>Email: <a href="mailto:contacto@indemniplus.com">contacto@indemniplus.com</a></li>
                 <li>Teléfono:  624 632 077</li>
             </ul>
         </div>
@@ -134,6 +177,7 @@
     <!-- Footer -->
     <footer class="text-center py-4">
         <p>&copy; 2024 Indemniplus. Todos los derechos reservados.</p>
+        <p><a class="nav-link" href="politica-privacidad/">Politica de privacidad</a></p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

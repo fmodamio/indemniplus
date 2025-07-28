@@ -6,7 +6,45 @@
     <title>Indemniplus - Área Médica</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         {% load static %}
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}"/>
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+
+     // Define el consentimiento predeterminado de regiones concretas según tus requisitos
+     gtag('consent', 'default', {
+       'ad_storage': 'denied',
+       'ad_user_data': 'denied',
+       'ad_personalization': 'denied',
+       'analytics_storage': 'denied',
+       'functionality_storage': 'denied',
+       'personalization_storage': 'denied',
+       'security_storage': 'denied',
+       'regions':['US'],
+     });
+
+     // Set default consent for all other regions according to your requirements
+     gtag('consent', 'default', {
+       'ad_storage': 'denied',
+       'ad_user_data': 'denied',
+       'ad_personalization': 'denied',
+       'analytics_storage': 'denied',
+       'functionality_storage': 'denied',
+       'personalization_storage': 'denied',
+       'security_storage': 'denied',
+     });
+    </script>
+    <script src="https://cmp.osano.com/16BlMkUNJMqvt2Djk/f117ba04-604c-4398-8f0b-476a25495285/osano.js"></script> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C752G8MKP6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-C752G8MKP6');
+    </script>
 </head>
 <body>
 
@@ -28,13 +66,12 @@
     </nav>
 
     <!-- Zona Médica -->
-<section id="zona-medica" class="py-5">
+    <section id="zona-medica" class="py-5">
         <div class="container">
             <div class="text-center mb-5">
                 <h2>Tu Salud es Nuestra Prioridad</h2>
                 <p>Nos aseguramos de brindarte el mejor tratamiento médico desde el primer minuto.</p>
             </div>
-            
             <div class="row">
                 <div class="col-lg-6 mb-4">
                     <div class="card h-100">
@@ -58,30 +95,30 @@
                             <h4 class="card-title">Tratamiento Gratuito</h4>
                             <p class="card-text">Te ofrecemos de forma totalmente gratuita las sesiones de fisioterapia y rehabilitación que pudieras necesitar hasta tu completa recuperación.</p>
                              <div class="row">
-            <!-- Columna 1 -->
-            <div class="col-md-6">
-                <ul class="arrow-list">
-                    <li>Hospitales</li>
-                    <li>Clínicas</li>
-                    <li>Servicio de Urgencias</li>
-                    <li>Cirugía</li>
-                    <li>Pruebas Médicas</li>
-                    <li>Transporte Sanitario</li>
-                    <li>Traumatología</li>
-                </ul>
-            </div>
-            <!-- Columna 2 -->
-            <div class="col-md-6">
-                <ul class="arrow-list">
-                    <li>Rehabilitación</li>
-                    <li>Fisioterapia</li>
-                    <li>Electroterapia</li>
-                    <li>Magnetoterapia</li>
-                    <li>Ultrasonidos</li>
-                    <li>Onda Corta</li>
-                </ul>
-            </div>
-        </div>
+                                <!-- Columna 1 -->
+                                <div class="col-md-6">
+                                    <ul class="arrow-list">
+                                        <li>Hospitales</li>
+                                        <li>Clínicas</li>
+                                        <li>Servicio de Urgencias</li>
+                                        <li>Cirugía</li>
+                                        <li>Pruebas Médicas</li>
+                                        <li>Transporte Sanitario</li>
+                                        <li>Traumatología</li>
+                                    </ul>
+                                </div>
+                                <!-- Columna 2 -->
+                                <div class="col-md-6">
+                                    <ul class="arrow-list">
+                                        <li>Rehabilitación</li>
+                                        <li>Fisioterapia</li>
+                                        <li>Electroterapia</li>
+                                        <li>Magnetoterapia</li>
+                                        <li>Ultrasonidos</li>
+                                        <li>Onda Corta</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -93,10 +130,6 @@
                         </div>
                     </div>
                 </div>
-            <!-- Nueva sección de snaps -->
-         
-            <!-- Fin de la nueva sección de snaps -->
-
                 <div class="col-lg-12 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
@@ -114,6 +147,7 @@
     <!-- Footer -->
     <footer class="text-center py-4">
         <p>&copy; 2024 Indemniplus. Todos los derechos reservados.</p>
+        <p><a class="nav-link" href="/politica-privacidad">Politica de privacidad</a></p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

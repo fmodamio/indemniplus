@@ -19,3 +19,11 @@ const redirigir = async(url,color) =>{
     await delay(1000);
     window.location.href = url;
 }
+
+document.getElementById('id_aceptar_terminos').oninvalid = function(event) {
+    event.target.setCustomValidity('Debes aceptar el tratamiento de datos personales para poder enviar tu caso.');
+};
+
+document.getElementById('id_aceptar_terminos').oninput = function(event) {
+    event.target.setCustomValidity('');  // Restablecer el mensaje de validación personalizado si el usuario marca el checkbox
+};

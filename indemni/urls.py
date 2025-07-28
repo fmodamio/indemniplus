@@ -21,7 +21,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('rufas/', admin.site.urls),
+    path('superindemni/', admin.site.urls),
     path('blog/', include('blog.urls')),  # Incluir las URLs del blog
     path('', include('index.urls')),  # Incluir las URLs del formulario
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
